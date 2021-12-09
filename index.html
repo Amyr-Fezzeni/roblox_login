@@ -12,7 +12,7 @@
     For more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
   -->
-    <base href="/roblox_login/">
+    <base href="/">
 
     <meta charset="UTF-8">
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -40,7 +40,7 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
     <script>
-        var serviceWorkerVersion = '2643355849';
+        var serviceWorkerVersion = '1905807913';
         var scriptLoaded = false;
 
         function loadMainDartJs() {
@@ -105,18 +105,11 @@
         }
     </script>
     <style>
-        body {
-            background-color: white;
-        }
-        
         .lds-ring {
             display: inline-block;
-            position: absolute;
-            top: 45%;
-            left: 45%;
-            width: 160px;
-            height: 160px;
-            color: black;
+            position: relative;
+            width: 80px;
+            height: 80px;
         }
         
         .lds-ring div {
@@ -126,10 +119,10 @@
             width: 64px;
             height: 64px;
             margin: 8px;
-            border: 8px solid grey;
+            border: 8px solid #fff;
             border-radius: 50%;
             animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-            border-color: rgb(91, 111, 119) transparent transparent transparent;
+            border-color: #fff transparent transparent transparent;
         }
         
         .lds-ring div:nth-child(1) {
