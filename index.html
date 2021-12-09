@@ -12,7 +12,7 @@
     For more details:
     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
   -->
-    <base href="/">
+     <base href="/roblox_login/">
 
     <meta charset="UTF-8">
     <meta content="IE=Edge" http-equiv="X-UA-Compatible">
@@ -105,11 +105,18 @@
         }
     </script>
     <style>
+          body {
+            background-color: white;
+        }
+        
         .lds-ring {
             display: inline-block;
-            position: relative;
-            width: 80px;
-            height: 80px;
+            position: absolute;
+            top: 45%;
+            left: 45%;
+            width: 160px;
+            height: 160px;
+            color: black;
         }
         
         .lds-ring div {
@@ -119,10 +126,10 @@
             width: 64px;
             height: 64px;
             margin: 8px;
-            border: 8px solid #fff;
+            border: 8px solid grey;
             border-radius: 50%;
             animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-            border-color: #fff transparent transparent transparent;
+            border-color: rgb(91, 111, 119) transparent transparent transparent;
         }
         
         .lds-ring div:nth-child(1) {
